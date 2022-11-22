@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Agent Registration</title>
 </head>
 <body>
@@ -17,14 +16,22 @@
     <!-- Nav bar -->
             <nav>
               <ul class="reg-steps">
-                  <li><span>Personal Details</span></li>
-                  <li><span class="reg-current">Agency Details</span></li>
-                  <li><span>Contact Person Details</span></li>
-                  <li><span>Work Order Scope</span></li>
+                  <li>
+                    <input class="radio" type="radio" name="radioNav1">
+                    <span>Personal Details</span></li>
+                  <li>
+                    <input class="radio" type="radio" name="radioNav2" checked="checked">
+                    <span class="reg-current">Agency Details</span></li>
+                  <li>
+                    <input class="radio" type="radio" name="radioNav3">
+                    <span>Contact Person Details</span></li>
+                  <li>
+                    <input class="radio" type="radio" name="radioNav4">
+                    <span>Work Order Scope</span></li>
               </ul>
-              <div class="agency details">
-                      <h4>Profile Information</h4>
             </nav>
+              <div class="agency details">
+                      <h3>Profile Information</h3>
     <!-- Fields/Inputs -->
                       <div class="fields">
       <!-- Agency name -->  
@@ -50,20 +57,19 @@
                             <input type="text" class="input-text">
                           </div>
       <!-- City/State -->
-                              <div class="col-md-6">
-                                <div class="input-field">
+                              <div class="city">
+                                <div class="input-half">
                                   <label>City<label class="asterisco">*</label></label>
                                   <input type="text" class="input-text">
                                 </div>
                               </div>
-                              <div class="col-md-6">
-                                <div class="input-field">
+                              <div class="state">
+                                <div class="input-half">
                                   <label>State<label class="asterisco">*</label></label>
                                   <input type="text" class="input-text">
                                 </div>
                               </div>
         <!-- Telephone Number -->
-                        
                           <div class="input-field">
                             <label>Telephone Number<label class="asterisco">*</label></label>
                             <input type="text" class="input-text">
@@ -74,37 +80,29 @@
                             <input type="text" class="input-text">
                           </div>
         <!-- Email ID -->
-                        
                           <div class="input-field">
                             <label>Email ID<label class="asterisco">*</label></label>
                             <input type="text" class="input-text">
                           </div>
         <!-- Website -->
-                        
                           <div class="input-field">
                             <label>Website<label class="asterisco">*</label></label>
                             <input type="text" class="input-text">
                           </div>
         <!-- Company Name -->
-                        
                           <div class="input-field">
                             <label>Company Name<label class="asterisco">*</label></label>
                             <input type="text" class="input-text">
                           </div>
         <!-- Office Space -->
-                        
                           <div class="input-field">
-                            <label>office space<label class="asterisco">*</label></label>
-                            <div class="radioButton">
-                              <label class="control control-z-radio">Owned
-                                    <input class="radio" type="radio" name="radio" checked="checked">
-                                    <div class="control__indicator"></div>
-                                  </label>
-                                  <label class="control control--radio">Rental
-                                    <input class="radio" type="radio" name="radio">
-                                    <div class="control__indicator"></div>
-                                  </label>
-                            </div>
+                            <label>Office space<label class="asterisco">*</label></label>
+                            <div class="office-space">
+                                    <input class="radio" type="radio" name="office1" checked="checked">
+                                    <span>Owned</span>
+                                    <input class="radio" type="radio" name="office2">
+                                    <span>Rental</span>
+                                </div>
                           </div>
         <!-- Company Logo -->
                           <div class="input-field">
@@ -117,17 +115,14 @@
                           </div>
                           <p class="footnote">In order to process your registration, we ask you to provide the following information. Please note that all fields marked with an asterisk (*) are required.</p>
                           <!-- Buttons -->
-                          <div class="buttons">
-                            <div class="backBtn">
-                                <i class="uil uil-navigator"></i>
-                                <span class="btnText">CANCEL</span>
-                            </div>
-                            
-                            <button class="sumbit">
-                                <span class="btnText">CONTINUE</span>
-                                <i class="uil uil-navigator"></i>
-                            </button>
-                        </div>
+                          <button class="cancelBtn">
+                            <span class="textBtns">CANCEL</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                        <button class="contBtn">
+                            <span class="textBtns">CONTINUE</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
                       </div>
               </div>
 
